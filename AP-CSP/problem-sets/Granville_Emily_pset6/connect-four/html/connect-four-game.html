@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connect Four Game</title>
+        <script src="../js/connect-four-js.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/connect-four-css.css">
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    </head>
+    <body onLoad="loadPage()">
+
+      <div id="myModal" class="modal">
+        <div id="divInModal">
+          <span onclick="hideModal()" id="close">&times;</span>
+          <p id="modalText">The winner is the orange user!</p>
+          <button onclick="restart()" id="uglyButton">Play Again?</button>
+        </div>
+      </div>
+
+      <table>
+          <tr id="heading">
+              <th>
+                  <button onclick="buttonZero()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonOne()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonTwo()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonThree()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonFour()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonFive()"></button>
+              </th>
+              <th>
+                  <button onclick="buttonSix()"></button>
+              </th>
+          </tr>
+          <tr>
+              <td><canvas id="c0-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c0-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+          <tr>
+              <td><canvas id="c1-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c1-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+          <tr>
+              <td><canvas id="c2-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c2-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+          <tr>
+              <td><canvas id="c3-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c3-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+          <tr>
+              <td><canvas id="c4-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c4-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+          <tr>
+              <td><canvas id="c5-0" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-1" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-2" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-3" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-4" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-5" class="canvas" height="100px" width="100px"></canvas></td>
+              <td><canvas id="c5-6" class="canvas" height="100px" width="100px"></canvas></td>
+          </tr>
+      </table>
+      <h3><a href="connect-four-instructions.html">< Back</a></h3>
+    </body>
+</html>

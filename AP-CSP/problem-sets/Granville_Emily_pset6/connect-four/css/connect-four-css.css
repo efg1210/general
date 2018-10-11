@@ -1,0 +1,130 @@
+
+/*other purple: #9900cc*/
+body {
+    margin-top: 20px;
+    background-color: #df80ff;
+}
+table {
+    background-color: #9900cc;
+    margin: auto;
+    min-width: 840px;
+    border-collapse: collapse;
+}
+tr {
+   text-align: center;
+   height: 120px;
+   width: 120px;
+}
+button {
+    width: 90px;
+    height: 15px;
+}
+#heading {
+    height: 16px;
+    background-color: #df80ff;
+}
+
+th {
+  padding-bottom: 10px;
+}
+
+canvas {
+  height: 100px;
+  width: 100px;
+}
+
+h1, h3 {
+  font-family: 'Macondo', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h3 {
+  font-size: 250%;
+}
+
+p {
+  font-size: 150%;
+  margin: auto;
+  width: 50%;
+  font-family: sans-serif;
+}
+
+.button {
+  display: inline;
+}
+
+#back {
+  float: left;
+}
+
+ #toGame {
+   float: right;
+ }
+
+ #buttons6 {
+   margin-left: 200px;
+   margin-right: 200px;
+ }
+
+ .modal {
+   margin: auto;
+   display: none;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   padding-top: 100px;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+ }
+
+ #modalText {
+   font-family: 'Macondo', sans-serif;
+   font-size: 30px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-left: 15px;
+ }
+
+ #uglyButton {
+   display: block;
+   margin: auto;
+   height: 50px;
+   width: 200px;
+   font-family: 'Macondo', sans-serif;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #9900cc;
+   color: white;
+   border: none;
+ }
+
+ #close {
+   height: 30px;
+   float: right;
+   clear: left;
+   font-size: 50px;
+   margin-right: 15px;
+   margin-top: 15px;
+   color: #404040;
+   font-weight: bold;
+ }
+
+ #close:hover {
+   color: #ff0000;
+ }
+
+ #divInModal {
+   margin: auto;
+   background-color: #df80ff;
+   width: 600px;
+   height: 170px;
+   padding-left: 10px;
+ }

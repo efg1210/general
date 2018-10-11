@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem Set 7</title>
+    <script type="text/javascript" src="../js/pset7.js"></script>
+    <script type="text/javascript" src="../js/linear.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/pset7.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  </head>
+  <body onload="startup('search');">
+    <div id="search">
+      <h1>Linear Search</h1>
+
+      <div id="myModal" class="modal">
+        <div id="divInModal">
+          <span onclick="hideModal();" id="close">&times;</span>
+          <p id="modalText">My awesome MODAL</p>
+        </div>
+      </div>
+
+      <div id="bars" class="bars">
+
+      </div>
+      <div class="action-items">
+        <button id="gen-btn" class="action-item btn" onclick="generate('linear');">Generate</button>
+        <button id="start-btn" class="action-item btn" onclick="search();">Start Search</button>
+        <input id="slider" type="range" min="1" max="20" value="10" class="action-item btn" onchange="adjustSpeed('change');"/>
+      </div>
+      <a href="index.html" class="back"><button>Back</button</a>
+    </div>
+  </body>
+</html>

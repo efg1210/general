@@ -1,0 +1,54 @@
+body {
+    background-color: #ffb3b3;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 200%;
+    font-family: 'Press Start 2P', monospace;
+    padding: 10px;
+    color: #6d6d6d;
+    background-color: #e5e3e3;
+    height: 200px;
+    text-align: right;
+}
+
+button {
+    background-color: #d473e2;
+    height: 50px;
+    min-width:50px;
+    border-radius: 10px;
+    font-size: 200%;
+    color: #4d4d4d;
+    border-color: #790c89;
+    outline: none;
+}
+
+button:hover {
+    background-color: #bf11d8;
+    color: #3b3b3b;
+}
+
+.number {
+    min-width: 150px;
+}
+
+#allNumbers {
+    text-align: center;
+    border-color: black;
+    border-width: 2px;
+}
+
+#zero {
+  width: 304px;
+}
+
+.bottom {
+    width: 151px;
+}
+
+.top {
+    width: 226.5px;
+}
