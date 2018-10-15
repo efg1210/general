@@ -4,17 +4,18 @@ public class cipher {
     
     public static void main(String[] args) {
         
-        System.out.println("Code or decode c/d");
-        Scanner sc = new Scanner(System.in).useDelimiter("");
-        String direction = sc.next();
-        
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("What text do you want changed");
-        Scanner sc1 = new Scanner(System.in);
-        String message = sc1.nextline();
+        String message = sc.nextLine();
         
+        System.out.println("Code or decode c/d");
+        String direction = sc.next();
+
         System.out.println("What is the cipher key (number, preferably between 1 and 25)");
-        Scanner sc2 = new Scanner(System.in);
-        int key = sc2.nextInt();
+        int key = sc.nextInt();
+        
+        sc.close();
         
         if(direction.equals("d")){
             key *= -1;
@@ -23,7 +24,6 @@ public class cipher {
         String encryptedMessage = "";
         encryptedMessage += encodeMessage(message, key);
         System.out.println(encryptedMessage);
-        System.out.println("junebug");
    }
 
     public static String encodeMessage(String message, int key){
